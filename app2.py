@@ -3,9 +3,9 @@ import joblib
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
-    model = AutoModelForSequenceClassification.from_pretrained('PlengP/logitmodel')
-    tokenizer = AutoTokenizer.from_pretrained('PlengP/vectorizer')
-    return model, tokenizer
+    model = AutoTokenizer.from_pretrained('PlengP/logitmodel')
+    vectorizer = AutoTokenizer.from_pretrained('PlengP/vectorizer')
+    return model, vectorizer
 
 def makeTokens(f):
     tkns_BySlash = str(f.encode('utf-8')).split('/')  # make tokens after splitting by slash
@@ -56,3 +56,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
