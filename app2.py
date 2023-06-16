@@ -3,8 +3,8 @@ import joblib
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
-    model = joblib.load('logit_model.pkl')
-    vectorizer = AutoTokenizer.from_pretrained
+    model = AutoTokenizer.from_pretrained('PlengP/logitmodel')
+    vectorizer = AutoTokenizer.from_pretrained('PlengP/vectorizer')
     return model, vectorizer
 
 def makeTokens(f):
