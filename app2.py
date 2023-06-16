@@ -1,11 +1,10 @@
 import streamlit as st
 import joblib
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import tensorflow as tf
 
 def load_model():
     model = joblib.load('logit_model.pkl')
-    vectorizer = tf.saved_model.load('PlengP/vectorizer')
+    vectorizer = AutoTokenizer.from_pretrained
     return model, vectorizer
 
 def makeTokens(f):
