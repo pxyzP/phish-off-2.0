@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import sklearn
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
