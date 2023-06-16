@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
     model = joblib.load('logit_model.pkl')
-    vectorizer = AutoTokenizer.from_pretrained('PlengP/vectorizer')
+    vectorizer = joblib.load('vectorizer.pkl')
     return model, vectorizer
 
 def makeTokens(f):
