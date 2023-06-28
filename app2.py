@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-import pillow as PIL
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
@@ -60,7 +59,7 @@ hide_default_format = """
         """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
-from PIL import Image
+from pillow import Image
 im = Image.open('phishofflogo.png')
 im.save('phishofflogo.png')
 st.set_page_config(page_title = "PhishOff2.0", page_icon = im)
