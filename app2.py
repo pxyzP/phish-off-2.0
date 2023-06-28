@@ -43,14 +43,13 @@ def main():
     model, vectorizer = load_model()
   
     # Display an input field for the user to enter data
-    input_data = st.text_input( '...')
+    input_data = st.text_input( ' ')
 
-    if st.button('Predict'):
-        # Perform predictions using the loaded model
+    if st.button('Analyze'):
         input_data = vectorizer.transform([input_data])
         result = model.predict(input_data)
 
-        # Display the result
+      
         st.write('Prediction:', result)
 
 
