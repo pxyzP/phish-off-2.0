@@ -52,6 +52,15 @@ def main():
       
         st.write('Prediction:', result)
 
+hide_default_format = """
+        <style>
+        footer {visibility : hidden}
+        </style>
+        """
+st.markdown(hide_default_format, unsafe_allow_html=True)
+
+from PIL import Image
+im = Image.open('phishofflogo.jpg')
 
 if __name__ == "__main__":
     main()
