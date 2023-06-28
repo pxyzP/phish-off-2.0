@@ -57,6 +57,8 @@ hide_default_format = """
         footer {visibility : hidden}
         </style>
         """
+
+st.set_page_config(page_title = "PhishOff2.0")
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
 from PIL import Image
