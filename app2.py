@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import pillow as PIL
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 def load_model():
