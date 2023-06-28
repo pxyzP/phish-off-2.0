@@ -2,4 +2,4 @@ joblib
 streamlit
 transformers
 scikit-learn
-
+pillow
