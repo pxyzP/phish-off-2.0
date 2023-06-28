@@ -62,7 +62,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 from PIL import Image
 im = Image.open('phishofflogo.png')
 im.save('phishofflogo.png')
-st.set_page_config(page_title = "PhishOff2.0", page_icon = im)
+st.set_page_config(page_icon = im)
 
 if __name__ == "__main__":
     main()
