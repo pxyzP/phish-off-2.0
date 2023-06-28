@@ -61,6 +61,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 
 from PIL import Image
 im = Image.open('phishofflogo.jpg')
+st.set_page_config(page_icon = im)
 
 if __name__ == "__main__":
     main()
