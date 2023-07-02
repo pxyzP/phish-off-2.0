@@ -61,8 +61,6 @@ hide_default_format = """
 st.set_page_config(page_title = "PhishOff2.0")
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
-from PIL import Image
-im = Image.open('phishofflogo.png')
 if __name__ == "__main__":
     main()
 
